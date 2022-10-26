@@ -3,7 +3,7 @@
 This repo contains the code for paper [PCFG-based Natural Language Interface Improves Generalization for Controlled Text Generation](https://arxiv.org/abs/2210.07431) by Jingyu Zhang, James R. Glass, and Tianxing He
 
 ## Downloading data
-The processed data can be downloaded [here](). Please extract the zip to root folder of this repo, with the extracted content in `data/*`.
+The processed data can be downloaded [here](https://drive.google.com/file/d/1xRHVkWHHZqyFL0MYR7jv-HyvJFR9cw06/view?usp=sharing). Please extract the zip to root folder of this repo, with the extracted content in `data/*`.
 
 ## Naming
 The internal names for models is a bit different from names shown in paper. Here are their correspondence:
@@ -25,7 +25,7 @@ Run scripts `train_alignment.sh`, `train_concat.sh`, and `train_oracle.sh` with 
 Run scripts `generate_alignment.sh`, `generate_concat.sh`, and `generate_oracle.sh` with corresponding parameters. See comments in each script for explanation of parameters.
 
 ### Evaluate
-First, download classifier models (which evaluates control accuracy) [here](). Extract the contents to `evaluation/ckpt/*`.
+First, download classifier models (which evaluates control accuracy) [here](https://drive.google.com/file/d/1B_ERMeNbYckvQ7QpZHOZR0dBcinzESt2/view?usp=sharing). Extract the contents to `evaluation/ckpt/*`.
 
 Navigate to `evaluation` directory, run `eval.sh` with corresponding parameters.
 
