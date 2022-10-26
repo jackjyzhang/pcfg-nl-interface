@@ -1,0 +1,38 @@
+<variables>
+[TEXT-CLASS]	app review, app review, app comment
+[TEXT-FORM]	[TEXT-CLASS], [TEXT-CLASS], [TEXT-CLASS] article, [TEXT-CLASS] passage, [TEXT-CLASS] paragraph, [TEXT-CLASS] piece, piece of [TEXT-CLASS], app review chapter, [TEXT-CLASS] item
+[HEAD-FORM]	give me, generate, tell me about, show, show me, fetch me, output, I need, I want, need, I request, write
+[SENT-NOUN]	rating, rating, score
+[SENT-PREP]	with, with, with, that has, / which has, of
+[SENT-SEG]	[SENT-PREP] a [SENT] [SENT-NOUN]
+[PLS]	please, , 
+[COMMA-PLS]	/ please, , # use '/' as comma (escaped)
+[BEFORE-BE]	let it, make sure to, I want it to
+
+<length>
+43	very short, pretty short, extremely short, extra short
+72	short, concise
+104	medium-length, normal-length
+144	long, lengthy
+200	very long, pretty long, extremely long, extra long # here 256 is (max length in dataset + 1) because we're adding EOT_TOKEN in training
+
+<label>	[SENT]
+1	1-star
+2	2-star
+3	3-star
+4	4-star
+5	5-star
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length skipped
+# label only
+[HEAD-FORM] a [SENT] [SENT-NOUN] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [SENT] [SENT-NOUN] [TEXT-FORM] .
+[HEAD-FORM] a [TEXT-FORM] [SENT-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [SENT-SEG] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . Let it have a [SENT] [SENT-NOUN] .
+[HEAD-FORM] a [TEXT-FORM] . Let it have a [SENT] [SENT-NOUN] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [SENT-NOUN] to be [SENT] .
+# length only skipped

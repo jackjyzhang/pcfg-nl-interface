@@ -1,0 +1,43 @@
+<variables>
+[TEXT-CLASS]	AG news
+
+<length>
+43	succinct
+56	regular-length
+256	long-winded
+
+<label>	[TOPIC]
+0	world news
+1	athletics
+2	economics
+3	science and technology
+
+<templates>
+
+# label and length
+It would be nice if you can give me a [LENGTH] [TEXT-CLASS] with [TOPIC] topic .
+[TEXT-CLASS] that have a [LENGTH] length and [TOPIC] topic , please .
+Can you give me a [TEXT-CLASS] with a [TOPIC] topic ? By the way I want the length to be [LENGTH] .
+Well , produce a [TEXT-CLASS] having a topic of [TOPIC] and length of [LENGTH] now .
+I would prefer a [LENGTH] [TEXT-CLASS] on [TOPIC] .
+Why not give me a [TEXT-CLASS] on [TOPIC] that is [LENGTH] .
+I am interested in getting a [TEXT-CLASS] . Length is [LENGTH] , topic is [TOPIC] .
+If possible , please send me a [LENGTH] [TOPIC] [TEXT-CLASS] .
+# label only
+It would be nice if you can give me a [TEXT-CLASS] with [TOPIC] topic .
+[TEXT-CLASS] that have a [TOPIC] topic , please .
+Can you give me a [TEXT-CLASS] with a [TOPIC] topic ?
+Well , produce a [TEXT-CLASS] having a topic of [TOPIC] now .
+I would prefer a [TEXT-CLASS] on [TOPIC] .
+Why not give me a [TEXT-CLASS] on [TOPIC] .
+I am interested in getting a [TEXT-CLASS] . Topic is [TOPIC] .
+If possible , please send me a [TOPIC] [TEXT-CLASS] .
+# length only
+It would be nice if you can give me a [LENGTH] [TEXT-CLASS] .
+[TEXT-CLASS] that have a [LENGTH] length , please .
+Can you give me a [TEXT-CLASS] ? By the way I want the length to be [LENGTH] .
+Well , produce a [TEXT-CLASS] having a length of [LENGTH] now .
+I would prefer a [LENGTH] [TEXT-CLASS].
+Why not give me a [TEXT-CLASS] that is [LENGTH] .
+I am interested in getting a [TEXT-CLASS] . Length is [LENGTH] .
+If possible , please send me a [LENGTH] [TEXT-CLASS] .

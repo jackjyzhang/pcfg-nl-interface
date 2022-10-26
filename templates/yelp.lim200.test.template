@@ -1,0 +1,42 @@
+<variables>
+[TEXT-CLASS]	yelp report
+<length>
+43	very succinct
+72	succinct
+104	regular-length
+144	long-winded
+200	very long-winded
+<label>	[SENT]
+0	very pessimistic
+1	pessimistic
+2	indifferent
+3	optimistic
+4	very optimistic
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length
+It would be nice if you can give me a [LENGTH] [TEXT-CLASS] with a [SENT] inclination .
+[TEXT-CLASS] that have a [LENGTH] length and [SENT] inclination , please .
+Can you give me a [TEXT-CLASS] with a [SENT] inclination ? By the way I want the length to be [LENGTH] .
+Well , produce a [TEXT-CLASS] having a temperament of [SENT] and length of [LENGTH] now .
+I would prefer a [LENGTH] [TEXT-CLASS] that is [SENT] .
+I am interested in getting a [TEXT-CLASS] . Length is [LENGTH] , temperament is [SENT] .
+If possible , please send me a [LENGTH] [SENT] [TEXT-CLASS] .
+# label only
+It would be nice if you can give me a [TEXT-CLASS] with a [SENT] inclination .
+[TEXT-CLASS] that have a [SENT] inclination , please .
+Can you give me a [TEXT-CLASS] with a [SENT] inclination ?
+Well , produce a [TEXT-CLASS] having a temperament of [SENT] now .
+I would prefer a [TEXT-CLASS] that is [SENT] .
+I am interested in getting a [TEXT-CLASS] . Temperament is [SENT] .
+If possible , please send me a [SENT] [TEXT-CLASS] .
+# length only
+It would be nice if you can give me a [LENGTH] [TEXT-CLASS] .
+[TEXT-CLASS] that have a [LENGTH] length , please .
+Can you give me a [TEXT-CLASS] ? By the way I want the length to be [LENGTH] .
+Well , produce a [TEXT-CLASS] having a length of [LENGTH] now .
+I would prefer a [LENGTH] [TEXT-CLASS] .
+I am interested in getting a [TEXT-CLASS] . Length is [LENGTH] .
+If possible , please send me a [LENGTH] [TEXT-CLASS] .

@@ -1,0 +1,61 @@
+<variables>
+[TEXT-CLASS]	AG news
+
+<length>
+43	short
+56	medium-length
+256	long
+
+<label>	[TOPIC]
+0	the world
+1	sports
+2	business
+3	science, technology
+
+<templates>
+
+# label and length
+Please give me a [LENGTH] [TEXT-CLASS] related to [TOPIC] .
+I need a [LENGTH] [TEXT-CLASS] with a [TOPIC] topic .
+I want a [TEXT-CLASS] article. I want the topic to be [TOPIC], and length to be [LENGTH] .
+I want a [TEXT-CLASS] with a [TOPIC] topic, and make sure to be [LENGTH], please .
+Write a [TEXT-CLASS] report . I want it to be not only [LENGTH] but also have a theme on [TOPIC] .
+Please I request a [LENGTH] [TEXT-CLASS] report that can keep me updated with [TOPIC] .
+Generate a [TEXT-CLASS]. Let it be [LENGTH] and about [TOPIC] .
+Show a [TEXT-CLASS] related to [TOPIC] with [LENGTH] length , please .
+I want a piece of [TEXT-CLASS] pertinent to [TOPIC] , and I need it to be [LENGTH] .
+Give me a [TEXT-CLASS] that is concerning [TOPIC] , and I need it to be [LENGTH] .
+Need a [LENGTH] [TEXT-CLASS] item . Let it have a [TOPIC] focus .
+Please , I request a [LENGTH] [TEXT-CLASS] . Let it have a technology focus .
+Output a [LENGTH] [TEXT-CLASS] report that is concerning [TOPIC] .
+Fetch me a [LENGTH] [TEXT-CLASS] that is regarding [TOPIC] .
+# label only
+Please give me a [TEXT-CLASS] related to [TOPIC] .
+I need a [TEXT-CLASS] with a [TOPIC] topic .
+I want a [TEXT-CLASS] article . I want the topic to be [TOPIC] .
+I want a [TEXT-CLASS] with a [TOPIC] topic, please .
+Write a [TEXT-CLASS] report. I want it to have a theme on [TOPIC] .
+Please I request a [TEXT-CLASS] report that can keep me updated with [TOPIC] .
+Generate a [TEXT-CLASS] . Let it be about [TOPIC] .
+Show a [TEXT-CLASS] related to [TOPIC] , please .
+I want a piece of [TEXT-CLASS] pertinent to [TOPIC] .
+Give me a [TEXT-CLASS] that is concerning [TOPIC] .
+Need a [TEXT-CLASS] item . Let it have a [TOPIC] focus .
+Please , I request a [TEXT-CLASS] . Let it have a technology focus .
+Output a [TEXT-CLASS] report that is concerning [TOPIC] .
+Fetch me a [TEXT-CLASS] that is regarding [TOPIC] .
+# length only
+Please give me a [LENGTH] [TEXT-CLASS] .
+I need a [LENGTH] [TEXT-CLASS] .
+I want a [TEXT-CLASS] article . I want the length to be [LENGTH] .
+I want a [TEXT-CLASS], and make sure to be [LENGTH], please .
+Write a [TEXT-CLASS] report . I want it to be [LENGTH] .
+Please I request a [LENGTH] [TEXT-CLASS] report .
+Generate a [TEXT-CLASS] . Let it be [LENGTH] .
+Show a [TEXT-CLASS] with [LENGTH] length , please .
+I want a piece of [TEXT-CLASS] , and I need it to be [LENGTH] .
+Give me a [TEXT-CLASS] , and I need it to be [LENGTH] .
+Need a [LENGTH] [TEXT-CLASS] item .
+Please , I request a [LENGTH] [TEXT-CLASS] .
+Output a [LENGTH] [TEXT-CLASS] report .
+Fetch me a [LENGTH] [TEXT-CLASS] .

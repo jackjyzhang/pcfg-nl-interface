@@ -1,0 +1,42 @@
+<variables>
+[TEXT-CLASS]	yelp review
+<length>
+43	very short
+72	short
+104	medium-length
+144	long
+200	very long
+<label>	[SENT]
+0	very negative
+1	negative
+2	neutral
+3	positive
+4	very positive
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length
+Give me a [TEXT-CLASS] that has a [SENT] sentiment , and let it be [LENGTH] .
+Generate a [SENT] sentiment [TEXT-CLASS] that is [LENGTH] , please .
+Fetch me a [TEXT-CLASS] . I want it to be not only [LENGTH] but also have a [SENT] sentiment .
+Please write a [TEXT-CLASS] of a [SENT] sentiment , and I need it to be [LENGTH] .
+Tell me about a [LENGTH] [TEXT-CLASS] whose sentiment is [SENT] .
+Need a [TEXT-CLASS] . I want the length to be [LENGTH] and sentiment to be [SENT] .
+Show me a [TEXT-CLASS] with a [SENT] sentiment , and make sure to be [LENGTH] .
+# label only
+Give me a [TEXT-CLASS] that has a [SENT] sentiment .
+Generate a [SENT] sentiment [TEXT-CLASS] , please .
+Fetch me a [TEXT-CLASS] . I want it to have a [SENT] sentiment .
+Please write a [TEXT-CLASS] of a [SENT] sentiment .
+Tell me about a [TEXT-CLASS] whose sentiment is [SENT] .
+Need a [TEXT-CLASS] . I want the sentiment to be [SENT] .
+Show me a [TEXT-CLASS] with a [SENT] sentiment .
+# length only
+Give me a [TEXT-CLASS] , and let it be [LENGTH] .
+Generate a [TEXT-CLASS] that is [LENGTH] , please .
+Fetch me a [TEXT-CLASS] . I want it to be [LENGTH] .
+Please write a [TEXT-CLASS] , and I need it to be [LENGTH] .
+Tell me about a [LENGTH] [TEXT-CLASS] .
+Need a [TEXT-CLASS] . I want the length to be [LENGTH] .
+Show me a [TEXT-CLASS] with a [LENGTH] length .

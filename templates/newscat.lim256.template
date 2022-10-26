@@ -1,0 +1,75 @@
+<variables>
+[TEXT-CLASS]	CATEGORICAL news, CATEGORICAL news
+[TEXT-FORM]	[TEXT-CLASS], [TEXT-CLASS], [TEXT-CLASS] article, piece of [TEXT-CLASS], [TEXT-CLASS] report, [TEXT-CLASS] item, CATEGORICAL newspaper article
+[HEAD-FORM]	give me, generate, tell me about, show, show me, fetch me, output, I need, I want, need, I request, write
+[TOPIC-NOUN]	topic, topic, theme, focus # TODO: more topic nouns
+[TOPIC-NOUNED]	topic, topic, themed, focused, related # TODO: more topic nouns
+[TOPIC-PREP]	about, related to, concerning, regarding, pertinent to
+[TOPIC-UPDATEWORD]	updated, informed
+[TOPIC-SEG]	[TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], that is [TOPIC-PREP] [TOPIC], that is [TOPIC-PREP] [TOPIC], that can keep me [TOPIC-UPDATEWORD] with [TOPIC]
+[TOPIC-BESEG]	[TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], can keep me [TOPIC-UPDATEWORD] with [TOPIC]
+[PLS]	please, , 
+[COMMA-PLS]	/ please, , # use '/' as comma (escaped)
+[BEFORE-BE]	let it, make sure to, I want it to
+
+<length>
+43	short, concise, very short, pretty short, extremely short, extra short
+56	medium-length, normal-length
+256	long, lengthy, very long, pretty long, extremely long, extra long
+
+<label>	[TOPIC] # TODO: more similar words
+0	politics
+1	wellness
+2	entertainment
+3	travel
+4	style & beauty
+5	parenting
+6	healthy living
+7	queer voices
+8	food & drink
+9	business # blocked
+10	comedy
+11	sports # blocked
+12	black voices
+13	home & living
+14	parents
+15	the worldpost # blocked
+16	weddings
+17	women
+18	impact
+19	divorce
+20	crime
+21	media
+22	weird news
+23	green
+24	worldpost # blocked
+25	religion
+26	style
+27	science # blocked
+28	world news # blocked
+29	taste
+30	tech # blocked
+31	money
+32	arts
+33	fifty
+34	good news
+35	arts & culture
+36	environment
+37	college
+38	latino voices
+39	culture & arts
+40	education
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length skipped
+# label only
+[HEAD-FORM] a [TOPIC] [TOPIC-NOUNED] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TOPIC] [TOPIC-NOUNED] [TEXT-FORM] .
+[HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . Let it have a [TOPIC] [TOPIC-NOUN] .
+[HEAD-FORM] a [TEXT-FORM] . Let it have a [TOPIC] [TOPIC-NOUN] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [TOPIC-NOUN] to be [TOPIC] .
+# length only skipped

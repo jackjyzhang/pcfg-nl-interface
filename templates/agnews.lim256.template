@@ -1,0 +1,53 @@
+<variables>
+[TEXT-CLASS]	AG news, AG news
+[TEXT-FORM]	[TEXT-CLASS], [TEXT-CLASS], [TEXT-CLASS] article, piece of [TEXT-CLASS], [TEXT-CLASS] report, [TEXT-CLASS] item, AG newspaper article
+[HEAD-FORM]	give me, generate, tell me about, show, show me, fetch me, output, I need, I want, need, I request, write
+[TOPIC-NOUN]	topic, topic, theme, focus # TODO: more topic nouns
+[TOPIC-NOUNED]	topic, topic, themed, focused, related # TODO: more topic nouns
+[TOPIC-PREP]	about, related to, concerning, regarding, pertinent to
+[TOPIC-UPDATEWORD]	updated, informed
+[TOPIC-SEG]	[TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], that is [TOPIC-PREP] [TOPIC], that is [TOPIC-PREP] [TOPIC], that can keep me [TOPIC-UPDATEWORD] with [TOPIC]
+[TOPIC-BESEG]	[TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], [TOPIC-PREP] [TOPIC], can keep me [TOPIC-UPDATEWORD] with [TOPIC]
+[PLS]	please, , 
+[COMMA-PLS]	/ please, , # use '/' as comma (escaped)
+[BEFORE-BE]	let it, make sure to, I want it to
+
+<length>
+43	short, concise, very short, pretty short, extremely short, extra short
+56	medium-length, normal-length
+256	long, lengthy, very long, pretty long, extremely long, extra long
+
+<label>	[TOPIC] # TODO: more similar words
+0	the world, the world, the globe, international matters
+1	sports, sports, sporting events
+2	business, business, commerce
+3	science, science, technology, technology, tech
+# TODO: business news
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length
+[HEAD-FORM] a [LENGTH] [TEXT-FORM] [TOPIC-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be [LENGTH] and [TOPIC-BESEG] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG], and I need it to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG] , and [BEFORE-BE] be [LENGTH] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [TOPIC-NOUN] to be [TOPIC], and length to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] . I want the length to be [LENGTH], and [TOPIC-NOUN] to be [TOPIC] .
+[HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be not only [LENGTH] but also have a [TOPIC-NOUN] on [TOPIC] .
+# label only
+[HEAD-FORM] a [TOPIC] [TOPIC-NOUNED] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TOPIC] [TOPIC-NOUNED] [TEXT-FORM] .
+[HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [TOPIC-SEG] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . Let it have a [TOPIC] [TOPIC-NOUN] .
+[HEAD-FORM] a [TEXT-FORM] . Let it have a [TOPIC] [TOPIC-NOUN] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [TOPIC-NOUN] to be [TOPIC] .
+# length only
+[HEAD-FORM] a [LENGTH] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be [LENGTH] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] , and I need it to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] , and [BEFORE-BE] be [LENGTH] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] , and [BEFORE-BE] be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM]. I want the length to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM]. I want the length to be [LENGTH] [COMMA-PLS] .

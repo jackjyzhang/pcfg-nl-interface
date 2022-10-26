@@ -1,0 +1,52 @@
+<variables>
+[TEXT-CLASS]	yelp review, yelp review, yelp comment
+[TEXT-FORM]	[TEXT-CLASS], [TEXT-CLASS], [TEXT-CLASS] article, [TEXT-CLASS] passage, [TEXT-CLASS] paragraph, [TEXT-CLASS] piece, piece of [TEXT-CLASS], yelp review chapter, [TEXT-CLASS] item
+[HEAD-FORM]	give me, generate, tell me about, show, show me, fetch me, output, I need, I want, need, I request, write
+[SENT-NOUN]	tone, sentiment, attitude, mood
+[SENT-PREP]	with, with, with, that has, / which has, of
+[SENT-SEG]	[SENT-PREP] a [SENT] [SENT-NOUN]
+[PLS]	please, , 
+[COMMA-PLS]	/ please, , # use '/' as comma (escaped)
+[BEFORE-BE]	let it, make sure to, I want it to
+
+<length>
+43	very short, pretty short, extremely short, extra short
+72	short, concise
+104	medium-length, normal-length
+144	long, lengthy
+200	very long, pretty long, extremely long, extra long # here 256 is (max length in dataset + 1) because we're adding EOT_TOKEN in training
+
+<label>	[SENT]
+0	very negative, terrible, very bad, extremely negative
+1	negative, bad
+2	neutral, unopinionated
+3	positive, good, promising
+4	very positive, very good, excellent, splendid, extremely positive
+
+<templates>
+# label and extracted skipped
+# extracted only skipped
+# label and length
+[HEAD-FORM] a [LENGTH] [TEXT-FORM] [SENT-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be [LENGTH] and having a [SENT] [SENT-NOUN] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [SENT-SEG], and I need it to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] [SENT-SEG] , and [BEFORE-BE] be [LENGTH] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [SENT-NOUN] to be [SENT], and length to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] . I want the length to be [LENGTH], and [SENT-NOUN] to be [SENT] .
+[HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be not only [LENGTH] but also have a [SENT] [SENT-NOUN] .
+# label only
+[HEAD-FORM] a [SENT] [SENT-NOUN] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [SENT] [SENT-NOUN] [TEXT-FORM] .
+[HEAD-FORM] a [TEXT-FORM] [SENT-SEG] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] [SENT-SEG] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . Let it have a [SENT] [SENT-NOUN] .
+[HEAD-FORM] a [TEXT-FORM] . Let it have a [SENT] [SENT-NOUN] [COMMA-PLS] .
+[HEAD-FORM] a [TEXT-FORM] . I want the [SENT-NOUN] to be [SENT] .
+# length only
+[HEAD-FORM] a [LENGTH] [TEXT-FORM] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] . [BEFORE-BE] be [LENGTH] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] , and I need it to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM] , and [BEFORE-BE] be [LENGTH] [COMMA-PLS] .
+[PLS] [HEAD-FORM] a [TEXT-FORM] , and [BEFORE-BE] be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM]. I want the length to be [LENGTH] .
+[HEAD-FORM] a [TEXT-FORM]. I want the length to be [LENGTH] [COMMA-PLS] .
