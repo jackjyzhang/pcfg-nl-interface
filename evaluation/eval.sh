@@ -3,7 +3,7 @@ module load anaconda/2021a; source activate jack
 
 GENERATION_DIR=$1 # put directory name that contain generation
 INPUT_FILES=($GENERATION_DIR/*)
-DATASET="agnews" # yelp or agnews (need to change this depending on the dataset!)
+DATASET=$2 # yelp or agnews (need to change this depending on the dataset!)
 # uncomment to use not finetuned ppl
 # ORIG_PPL_FLAG="--orig_ppl"
 
