@@ -38,7 +38,7 @@ Run scripts `generate_alignment.sh`, `generate_concat.sh`, and `generate_oracle.
 For example,
 
 ```bash
-./generate_alignm,ent.sh 20 14 1000 alignment ckpt/alignment_agnews_lim256_len_bte agnews 1 0
+./generate_alignment.sh 20 14 1000 alignment ckpt/alignment_agnews_lim256_len_bte agnews 1 0
 ```
 
 load the checkpoint `ckpt/alignment_agnews_lim256_len_bte` and generate 1000 examples with top-$k$ decoding, $k$=20, and FUDGE strength hyperparameter $\lambda$=14.
